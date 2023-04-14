@@ -1,0 +1,275 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+  * {
+  box-sizing: border-box;
+  }
+    .header {
+      opacity: 0.85;
+      background-color: White;
+      text-align: center;
+      padding: 16px;
+    }
+    
+    section {
+    display: inline-block;
+    width: 100%;
+    }
+    
+    h1 {
+      color: Black; 
+      text-align: left;
+      font-size: 20px;
+      font-family: Trebuchet;
+    }
+    h2 {
+    font-size: 31px;
+    font-family: Georgia, serif;
+    color: white;
+    float: inherit;
+    }
+    
+    h3 {
+    color: White;
+    background-color: #6B8E23;
+    font-size: 17px;
+    font-family: verdana;
+    } 
+    
+    p {
+    color: white;
+    font-size: 16px;
+    font-family: verdana;
+    background-color: #556B2F;
+    }
+    
+    mark {
+    background-color: #DEB887; 
+    opacity: 0.9;
+    }
+    
+    .topnav {
+    overflow: hidden;
+    background-color: grey;
+    }
+    
+    .topnav a {
+    float: center;
+    display: inline;
+    color: white;
+    text-align: center;
+    padding: 50px 60px;
+    }
+    
+    .topnav a:hover {
+    background-color: #00c4cc;
+    color: black;
+    }
+    
+    body {
+     background-image: url("http://2.bp.blogspot.com/-aGG016vWHAM/Umvw6JQ3XzI/AAAAAAAAFak/VMd5-Xp4kCM/s1600/P1140389.JPG") ;
+      width: 100%;
+      margin: 0;
+    }
+
+  .img {
+  position: static;
+  margin: 130px 21px 250px 0;
+  width: 1400px;
+  float: right;
+    }
+    
+    img.rounded-corners {
+    border-radius: 15px;
+      }
+      
+  .box {
+    height: 31px;
+    width: 500px;
+    
+    }
+    
+  h3.round2 {
+  text-align: center ;
+  border : 2px solid white ;
+  padding: 15px;
+  border-radius: 40px ;
+  }
+    
+   p.round2 {
+  font-weight: 25;
+  padding: 15px;
+  border : 2px solid white ;
+  border-radius: 40px ;
+}
+
+   .footer {
+    position: fixed;
+    right: 0;
+    left : 800px;
+   bottom: 120px;
+   height: 30px;
+   width:100%;
+   background-color: #556B2F;
+   opacity : 0.85;
+   color: white;
+   }
+   
+   .container { 
+padding: 20px; 
+Margin: 10px -260px 10px 400px;
+ float: right;
+}
+
+.image-slider {
+  position: relative; 
+  max-width: 48rem; 
+  margin: 0 auto; 
+}
+
+.slider {
+  display: flex;
+  aspect-ratio: 18 / 9;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  border-radius: 0.8rem;
+}
+
+.slider img {
+  flex: 1 0 100%;
+  object-fit: cover;
+  scroll-snap-align: start;
+}
+.slider-nav {
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25px;
+    left:50%;
+    transform: translateX(-50%);
+  z-index: 1; 
+}
+
+.slider-nav a {
+  width: 0.6;
+  height: 0.6;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.90;
+  transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+  opacity: 1;
+}
+   
+  </style>
+  <script>
+
+function calculateTotal() {
+  var item1 = parseInt(document.getElementById("item1").value);
+  var item2 = parseInt(document.getElementById("item2").value);
+  var total = item1 * item2;
+  document.getElementById("total").value = total;
+}
+</script>
+</head>
+<body>
+<script>
+
+function TAlert() {
+alert("We have booked your Reservation. Thank you for Booking with us!")
+}
+
+</script>
+  <div class="header">
+<section>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Ph_seal_negros_occidental.png"width="100" height="100">
+    <h1> PROVINCE OF NEGROS OCCIDENTAL </h1>
+    </section>
+  </div>
+  
+  <div class="topnav">
+  <a href="file:///D:/Website.html/FunFacts.html"> Fun Facts </a>
+  <a href="file:///D:/Website.html/Culture.html"> Culture </a>
+  <a href="file:///D:/Website.html/History.html"> History </a>
+  <a href="file:///D:/Website.html/Tourism.html"> Tourism </a>
+  <a href="file:///D:/Website.html/Economic.html"> Economical State </a>
+  <a href="file:///D:/Website.html/Delicacies.html"> Delicacies </a>
+  <a href="file:///D:/Website.html/index.html"> Home </a>
+  </div>
+  
+ <h2><center><u> Sugary Sands Hotel </u></center><h2>
+
+  <div class="box">
+<h3 class="round2"><u> Booking Information </u></h3>
+  
+  <form>
+<p class="round2">
+  <b><u>Studio</u></b>
+  <br>
+  <br>
+  <label for="name">Name: </label>
+  <input type="text" id="name" name="name" required>
+  <br>
+  <br>
+  <label for="email">Email: </label>
+  <input type="email" id="email" name="email" required>
+  <br>
+  <br>
+  <label for="check-in-date">Check-in Date: </label>
+  <input type="date" id="check-in-date" name="check-in-date" required>
+  <br>
+  <br>
+  <label for="check-out-date">Check-out Date: </label>
+  <input type="date" id="check-out-date" name="check-out-date" required>
+  <br>
+  <br>
+  <label for="item1">Base Price:</label>
+  <input type="number" id="item1" name="item1" min="1300" max="1300"><br>
+
+  <label for="item2">Nights:</label>
+  <input type="number" id="item2" name="item2" min="0"><br><br>
+
+  <button type="button" onclick="calculateTotal()">Confirm Booking</button><br><br>
+
+  <label for="total">Total Cost:</label>
+  <input type="number" id="total" name="total" readonly><br><br>
+   <input type="submit" value="Book Now" onclick="TAlert()">
+</p>
+</form>
+</div>
+
+<section class="container">
+  <div class="image-slider">
+       <div class="slider"> 
+         <img id="1stslide" src="https://images.trvl-media.com/lodging/35000000/34600000/34592200/34592132/f47489c1.jpg?impolicy=resizecrop&rw=500&ra=fit"/>
+         <img id="2ndslide" src="https://www.acaciahotelsbacolod.com/wp-content/uploads/2022/03/2-1.png"/>
+         <img id="3rdslide" src="https://media-cdn.tripadvisor.com/media/photo-s/09/ba/32/26/centre-point-pratunam.jpg"/>
+         <img id="4thslide" src="https://www.liveabout.com/thmb/iiZoWzz9yw0Cjj3mGxOUbOZlecs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/modern-restaurant-in-hotel-460708501-5af71b57875db90036ccf611.jpg"/>
+         <img id="5thslide" src="https://www.marmomac.com/wp-content/uploads/2020/12/Ritz-Carlton-bathroom-1.jpeg"/>
+    </div>
+    <div class="slider-nav">
+      <a href="#1stslide"></a>
+         <a href="#2ndslide"></a>
+       <a href="#3rdslide"></a>
+          <a href="#4thslide"></a>
+       <a href="#5thslide"></a>
+    </div>
+  </div>
+</section>
+
+      <div class="footer"> <p><u> Members </u><br><br> Leader/Layout Artist : Julia Mae Nual <br>
+  Layout Artist : Carl Jaycob Gatchalian <br>
+  Editor/Researcher : Reign Angela Dela Cruz <br>
+Researcher : Gleniese Sangga Abrera <br>
+Coder : Jerome Carrillo </p>
+</div>
+  
+</body>
+</html>
